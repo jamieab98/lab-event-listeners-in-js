@@ -17,7 +17,18 @@ function resetBackgroundColor() {
 // Capture Keyboard Input
 
 // Function to display the key pressed by the user
-function displayKeyPress(event) {
+function displayKeyPress() {
+  let display = "";
+  document.getElementById("textInput").addEventListener("keydown", (event) => {
+    display = event.key;
+    document.getElementById("keyPressDisplay").textContent = display;
+  });
+  //const userInput = document.getElementById("textInput").value;
+
+  //const target = document.getElementById("keyPressDisplay");
+  //const display = document.getElementById("textInput").value;
+  //target.textContent = display;
+  
   // Implement the function to display key pressed
 }
 
