@@ -2,6 +2,8 @@
 
 // Function to change the background color when a button is clicked
 function changeBackgroundColor() {
+  const target = document.querySelector("#body");
+  target.style.backgroundColor = "blue";
   // Implement the function to change background color
 }
 
