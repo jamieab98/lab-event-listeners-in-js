@@ -21,13 +21,8 @@ function displayKeyPress() {
   let display = "";
   document.getElementById("textInput").addEventListener("keydown", (event) => {
     display = event.key;
-    document.getElementById("keyPressDisplay").textContent = display;
+    document.getElementById("keyPressDisplay").textContent = `Key pressed: ${display}`;
   });
-  //const userInput = document.getElementById("textInput").value;
-
-  //const target = document.getElementById("keyPressDisplay");
-  //const display = document.getElementById("textInput").value;
-  //target.textContent = display;
   
   // Implement the function to display key pressed
 }
@@ -36,6 +31,10 @@ function displayKeyPress() {
 
 // Function to display user input in real-time
 function displayUserInput() {
+  const display = document.getElementById("textInput").value;
+  const target = document.getElementById("textInputDisplay");
+  target.textContent = `You typed: ${display}`;
+
   // Implement the function to display user input
 }
 
