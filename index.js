@@ -9,6 +9,8 @@ function changeBackgroundColor() {
 
 // Function to reset the background color when the body is double-clicked
 function resetBackgroundColor() {
+  const target = document.querySelector("#body");
+  target.style.backgroundColor = "white";
   // Implement the function to reset background color
 }
 
